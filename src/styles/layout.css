@@ -1,0 +1,33 @@
+.layoutContainer {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		'header header header'
+		'menu main main'
+		'footer footer footer';
+}
+
+.layoutHeader {
+	grid-area: header;
+	padding: 16px;
+	background-color: pink;
+	color: #333;
+}
+
+.layoutMain {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 1fr 1fr auto;
+	gap: 24px;
+	padding: 24px;
+}
+
+.layoutFooter {
+	grid-area: footer;
+	padding: 16px;
+	background: #222;
+	color: #fff;
+	text-align: left;
+}
